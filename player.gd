@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
-@export var speed = 8.0
-@export var jump_velocity = 12.0
+@export var speed = 7.0
+@export var jump_velocity = 10.0
 
 var gravity = 9.8
 
@@ -9,7 +9,7 @@ var gravity = 9.8
 
 func _physics_process(delta):
     if not is_on_floor():
-        velocity.y -= gravity * delta
+        velocity.y -= gravity * delta * 1.5
     
     var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
     var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
@@ -26,16 +26,17 @@ func _physics_process(delta):
     
     move_and_slide()
     
-    # Magic
     if Input.is_action_just_pressed("cast_fireball"):
-        cast_spell("fireball")
+        cast_spell()
     elif Input.is_action_just_pressed("cast_iceshard"):
-        cast_spell("iceshard")
+        cast_spell()
     elif Input.is_action_just_pressed("cast_heal"):
-        cast_spell("heal")
+        cast_spell()
 
-func cast_spell(spell):
-    print("Casting: " + spell)
-    particles.emitting = true
-    await get_tree().create_timer(0.6).timeout
-    particles.emitting = false
+func cast_spell():
+    print("Spell cast!")
+    if particles:
+        particles.emitting = true
+        await get_tree().create_timer(0.5).timeout
+        if particles:
+            particles.emitting = false
