@@ -1,27 +1,24 @@
-# The Veil of Aether - Godot 4.6.2 (Minimal 3D Version)
+# The Veil of Aether - Godot 4.6.2 (Fixed Version)
 
-A minimal but playable 3D medieval RPG built for **Godot 4.6.2**.
+**Important:** The project had some loading errors. I have fixed them.
 
-## How to Play
+## How to Get the Fixed Version
 
-1. Download **Godot 4.6.2** from https://godotengine.org/download
-2. Open Godot 4.6.2
-3. Import this project
-4. Press F5 to play
+**Option 1 (Easiest):**
+1. Go to https://github.com/Fredd4e/veil-of-aether-3d
+2. Click **Code** → **Download ZIP**
+3. Extract and import in Godot 4.6.2
+
+**Option 2 (Better - Git):**
+```bash
+git pull
+```
 
 ## Controls
-- **WASD** — Move
-- **Space** — Jump
-- **1** — Fireball (particle effect)
-- **2** — Ice Shard (particle effect)
-- **3** — Heal (particle effect)
+- WASD = Move
+- Space = Jump
+- 1 = Fireball
+- 2 = Ice Shard
+- 3 = Heal
 
-## Features
-- Third-person movement
-- Magic casting with GPU particles
-- Atmospheric lighting + volumetric fog
-- Clean, expandable base
-
-Fully compatible with Godot 4.6.2. Ready for expansion with full story, quests, and enemies.
-
-Repo: https://github.com/Fredd4e/veil-of-aether-3d
+The project is now stable and loads correctly in Godot 4.6.2.
