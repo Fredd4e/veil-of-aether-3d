@@ -1,24 +1,16 @@
-# The Veil of Aether - Godot 4.6.2 (Fixed Version)
+# The Veil of Aether - Godot 4.6.2 (Now Fixed!)
 
-**Important:** The project had some loading errors. I have fixed them.
+The previous errors have been fixed.
 
-## How to Get the Fixed Version
+## Download the Fixed Version
 
-**Option 1 (Easiest):**
-1. Go to https://github.com/Fredd4e/veil-of-aether-3d
+1. Go to: https://github.com/Fredd4e/veil-of-aether-3d
 2. Click **Code** → **Download ZIP**
 3. Extract and import in Godot 4.6.2
 
-**Option 2 (Better - Git):**
-```bash
-git pull
-```
-
 ## Controls
-- WASD = Move
-- Space = Jump
-- 1 = Fireball
-- 2 = Ice Shard
-- 3 = Heal
+- **WASD** = Move
+- **Space** = Jump
+- **1 / 2 / 3** = Cast spells (shows particles)
 
-The project is now stable and loads correctly in Godot 4.6.2.
+The project should now load without errors.
