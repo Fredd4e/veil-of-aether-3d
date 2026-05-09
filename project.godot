@@ -1,0 +1,26 @@
+config_version=5
+
+[application]
+
+config/name="The Veil of Aether - 3D (Minimal)"
+run/main_scene="res://Main.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[rendering]
+renderer/rendering_method="forward_plus"
+
+[physics]
+3d/default_gravity=9.8
+
+[input]
+move_forward={"events":[Object(InputEventKey,"keycode":87)]}
+move_backward={"events":[Object(InputEventKey,"keycode":83)]}
+move_left={"events":[Object(InputEventKey,"keycode":65)]}
+move_right={"events":[Object(InputEventKey,"keycode":68)]}
+cast_fireball={"events":[Object(InputEventKey,"keycode":49)]}
+cast_iceshard={"events":[Object(InputEventKey,"keycode":50)]}
+cast_heal={"events":[Object(InputEventKey,"keycode":51)]}
